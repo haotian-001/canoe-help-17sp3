@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" /><title>on a664Message</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../../Resources/Stylesheets/vTableLight.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTableSymbol.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../../CANoeCANalyzer.htm#Topics/CAPLFunctions/ADFX/EventProcedures/CAPLfunctionAFDXOnA664Message.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <div>
+                    <p class="StructurePath"><a href="../../CAPLfunctions.htm" class="StructurePath MCXref xref xrefStructurePath">CAPL Functions</a> » <a href="../CAPLfunctionsAFDXOverview.htm" class="StructurePath">AFDX</a> » <span class="mc-variable System.Title variable">on a664Message</span></p>
+                    <h1><span class="mc-variable System.Title variable">on a664Message</span><a name="aanchor12537"></a>
+                        <MadCap:concept term="CAPLAFDX" /><a name="kanchor9989"></a>
+                    </h1>
+                    <p class="MenuPath">&#160;</p>
+                    <p class="AutoSearchFilterConcepts"><a name="aanchor12538"></a>
+                        <MadCap:concept term="SFCAPLFunctions" />
+                    </p>
+                </div>
+                <div data-mc-target-name="DIVCAPLNote">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vInfo.png" style="width: 48px;height: 45px;" title="Note" alt="Note" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Note</p>
+                                    <p>CAPL programs are by default not transparent to bus events. This means that a CAPL node in the evaluation branch of the measurement setup will block the data flow to its right side. You must explicitly code the forwarding of messages in CAPL nodes in the evaluation branch. In order to re-use this code snippet in Simulation Setup of <span class="Product">CANoe</span> you have to add conditional compilation. Otherwise a recursion will occur.</p>
+                                    <p>Forward AFDX message event:</p>
+                                    <p class="TableSourceCode">on a664Message * {<br />&#160;&#160;#if MEASUREMENT_SETUP<br />&#160;&#160;output(this);<br />&#160;&#160;#endif<br />}</p>
+                                    <p>Detect real message in CAPL:</p>
+                                    <p class="TableSourceCode">on a664Message * {<br />&#160;&#160;if (this.dir == RX) {<br />&#160;&#160;&#160;&#160;if (!this.SIMULATED) {<br />&#160;&#160;&#160;&#160;&#160;&#160;write("AFDX message received from real system");<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;else {<br />&#160;&#160;&#160;&#160;&#160;&#160;write("AFDX message received from simulated component");<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;}<br />}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLFunctionSyntax">
+                    <h2 class="CommandPage">Function Syntax</h2>
+                    <p class="Syntax">on a664Message &lt;message identification&gt;</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLDescription">
+                    <h2 class="CommandPage">Description</h2>
+                    <p class="StartList">The event procedure <span class="bold">on a664Message</span> is called on every AFDX message if the following conditions are fulfilled:</p>
+                    <ul>
+                        <li>The message id corresponds to the given id (asterisk means “any message”).</li>
+                        <li>The message carries a UDP message.</li>
+                    </ul>
+                    <p>Additional information related to this event is available via the <a href="../CAPLfunctionsAFDXSelectors.htm">selectors</a>. The keyword <a href="../../Other/EventProcedures/CAPLfunctionKeywordThis.htm">this</a> is available within an <span class="bold">on a664Message</span> procedure, to access the data of the AFDX event that has just been received.</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLSelectors">
+                    <h2 class="CommandPage">Selectors</h2>
+                    <p><a href="../CAPLfunctionsAFDXSelectors.htm">Selectors for AFDX messages</a>
+                    </p>
+                </div>
+                <div data-mc-target-name="DIVCAPLExample">
+                    <h2 class="CommandPage">Example</h2>
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td id="content" class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="Table">Calling conventions for the <span class="bold">on a664Message</span> handler</p>
+                                    <div>
+                                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTable.css');" class="TableStyle_vTable" cellspacing="0">
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th class="TableStyle_vTable_Head_0_0_RowSep_ColSep">
+                                                        <p class="TableHead">Convention</p>
+                                                    </th>
+                                                    <th class="TableStyle_vTable_Head_0_0_RowSep_ColEnd">
+                                                        <p class="TableHead">Comment</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message 0x30e40021</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with Id 0x30e40021 (hexadecimal)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message 123423</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with Id 123423 (decimal)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message MSG_INT3</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with Id from assigned database</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message	*</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with any Id</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message MsgChannel1.*</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with any Id on channel 1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message MsgChannel1.0x30e40021</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with Id 0x30e40021 (hexadecimal) on channel 1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                                        <p class="Syntax">on a664Message MsgChannel1.123423</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                                        <p class="Table">event with Id 123423 (decimal) on channel 1</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowEnd_ColSep">
+                                                        <p class="Syntax">on a664Message MsgChannel1.MSG_INT3</p>
+                                                    </td>
+                                                    <td class="TableStyle_vTable_Body_0_0_RowEnd_ColEnd">
+                                                        <p class="Table">event with Id from assigned database on channel 1</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLAvailability">
+                    <h2 class="CommandPage">Availability</h2>
+                    <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-vTableLight-Head-Header1">
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">&#160;</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANalyzer</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Windows)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Linux)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadD-Column1-Header1">
+                                    <p class="TableHead">vTESTstudio</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Since&#160;Version</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">9.0</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">9.0</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Restricted&#160;To</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">AFDX</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">AFDX</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">CANalyzer Measurement&#160;Setup (Transmit Branch)</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Measurement&#160;Setup / CANalyzer Analysis Branch</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Simulation Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Communication Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Modules</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Units</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">32-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">64-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                    <p class="Table">—✔</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="LinkList"><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="CAPLAFDX" href="javascript:void(0);" data-mc-topics="&lt;OnAfdxError&gt;|CAPLfunctionOnAfdxError.htm#aanchor7528||&lt;OnAfdxPacket&gt;|CAPLfunctionOnAfdxPacket.htm#aanchor6224||A664CloseProxyPort|../Functions/CAPLfunctionA664CloseProxyPort.htm#aanchor1893||A664GetFunctionalStatus|../Functions/CAPLfunctionA664GetFunctionalStatus.htm#aanchor6516||A664InitICMP|../Functions/CAPLfunctionA664InitICMP.htm#aanchor10432||A664InitMessage|../Functions/CAPLfunctionA664InitMessage.htm#aanchor2709||A664InitPayload|../Functions/CAPLfunctionA664InitPayload.htm#aanchor312||A664InitProxyPort|../Functions/CAPLfunctionA664InitProxyPort.htm#aanchor12613||A664isICMP|../Functions/CAPLfunctionA664isICMP.htm#aanchor10353||A664MsgConfig|../Functions/CAPLfunctionA664MsgConfig.htm#aanchor11528||A664ResizeMessage|../Functions/CAPLfunctionA664ResizeMessage.htm#aanchor8370||A664SetChecksum|../Functions/CAPLfunctionA664SetChecksum.htm#aanchor7662||A664SetFunctionalStatus|../Functions/CAPLfunctionA664SetFunctionalStatus.htm#aanchor10550||A664SetStringSignal|../Functions/CAPLfunctionA664SetStringSignal.htm#aanchor6088||A664TriggerFrame|../Functions/CAPLfunctionA664TriggerFrame.htm#aanchor5009||A664VLConfig|../Functions/CAPLfunctionA664VLConfig.htm#aanchor9092||AFDX CAPL Functions|../CAPLfunctionsAFDXOverview.htm#aanchor9285||AFDX Copy-Operator|../Functions/CAPLfunctionAfdxCopyOperator.htm#aanchor1985||AFDX Error Codes|../CAPLfunctionsAFDXErrorCodes.htm#aanchor8852||AfdxCompletePacket|../Functions/CAPLfunctionAfdxCompletePacket.htm#aanchor4700||AfdxDeregisterReceiveCallback|../Functions/CAPLfunctionAfdxDeregisterReceiveCallback.htm#aanchor9765||AfdxGetDBAttrAsString|../Functions/CAPLfunctionAfdxGetDBAttrAsString.htm#aanchor6495||AfdxGetDBAttrValue|../Functions/CAPLfunctionAfdxGetDBAttrValue.htm#aanchor7717||AfdxGetDBMessageName|../Functions/CAPLfunctionAfdxGetDBMessageName.htm#aanchor703||AfdxGetLastError|../Functions/CAPLfunctionAfdxGetLastError.htm#aanchor9379||AfdxGetLastErrorText|../Functions/CAPLfunctionAfdxGetLastErrorText.htm#aanchor1577||AfdxGetMessageId|../Functions/CAPLfunctionAfdxGetMessageId.htm#aanchor4985||AfdxGetMessageName|../Functions/CAPLfunctionAfdxGetMessageName.htm#aanchor380||AfdxGetPacketData|../Functions/CAPLfunctionAfdxGetPacketData.htm#aanchor1111||AfdxGetSignalBool|../Functions/CAPLfunctionAfdxGetSignalBool.htm#aanchor9522||AfdxGetSignalInt|../Functions/CAPLfunctionAfdxGetSignalInt.htm#aanchor1736||AfdxGetSignalInt64|../Functions/CAPLfunctionAfdxGetSignalInt64.htm#aanchor389||AfdxGetSignalOpaque|../Functions/CAPLfunctionAfdxGetSignalOpaque.htm#aanchor3997||AfdxGetSignalReal|../Functions/CAPLfunctionAfdxGetSignalReal.htm#aanchor7938||AfdxGetSignalStatus|../Functions/CAPLfunctionAfdxGetSignalStatus.htm#aanchor2588||AfdxGetSignalString|../Functions/CAPLfunctionAfdxGetSignalString.htm#aanchor11569||AfdxGetTokenData|../Functions/CAPLfunctionAfdxGetTokenData.htm#aanchor8125||AfdxGetTokenInt|../Functions/CAPLfunctionAfdxGetTokenInt.htm#aanchor943||AfdxGetTokenInt64|../Functions/CAPLfunctionAfdxGetTokenInt64.htm#aanchor11873||AfdxGetTokenLengthBit|../Functions/CAPLfunctionAfdxGetTokenLengthBit.htm#aanchor1101||AfdxGetTokenReal|../Functions/CAPLfunctionAfdxGetTokenReal.htm#aanchor5506||AfdxGetTokenString|../Functions/CAPLfunctionAfdxGetTokenString.htm#aanchor11048||AfdxInitPacket|../Functions/CAPLfunctionAfdxInitPacket.htm#aanchor7673||AfdxInitProtocol|../Functions/CAPLfunctionAfdxInitProtocol.htm#aanchor11938||AfdxInitSchedule|../Functions/CAPLfunctionAfdxInitSchedule.htm#aanchor5950||AfdxIsPacketValid|../Functions/CAPLfunctionAfdxIsPacketValid.htm#aanchor6262||AfdxIsReceiveCallbackRegistered|../Functions/CAPLfunctionAfdxIsReceiveCallbackRegistered.htm#aanchor8720||AfdxOutputPacket|../Functions/CAPLfunctionAfdxOutputPacket.htm#aanchor6760||AfdxOutputPacketRaw|../Functions/CAPLfunctionAfdxOutputPacketRaw.htm#aanchor8272||AfdxOutputPacketWithSignals|../Functions/CAPLfunctionAfdxOutputPacketWithSignals.htm#aanchor1942||AfdxRegisterReceiveCallback|../Functions/CAPLfunctionAfdxRegisterReceiveCallback.htm#aanchor12570||AfdxReleasePacket|../Functions/CAPLfunctionAfdxReleasePacket.htm#aanchor9385||AfdxRemoveToken|../Functions/CAPLfunctionAfdxRemoveToken.htm#aanchor4105||AfdxResizeToken|../Functions/CAPLfunctionAfdxResizeToken.htm#aanchor1922||AfdxSetErrorHandler|../Functions/CAPLfunctionAfdxSetErrorHandler.htm#aanchor8645||AfdxSetSignalBool|../Functions/CAPLfunctionAfdxSetSignalBool.htm#aanchor2868||AfdxSetSignalInt|../Functions/CAPLfunctionAfdxSetSignalInt.htm#aanchor12007||AfdxSetSignalInt64|../Functions/CAPLfunctionAfdxSetSignalInt64.htm#aanchor10061||AfdxSetSignalOpaque|../Functions/CAPLfunctionAfdxSetSignalOpaque.htm#aanchor1238||AfdxSetSignalReal|../Functions/CAPLfunctionAfdxSetSignalReal.htm#aanchor8018||AfdxSetSignalStatus|../Functions/CAPLfunctionAfdxSetSignalStatus.htm#aanchor6933||AfdxSetSignalString|../Functions/CAPLfunctionAfdxSetSignalString.htm#aanchor7195||AfdxSetTokenData|../Functions/CAPLfunctionAfdxSetTokenData.htm#aanchor3908||AfdxSetTokenInt|../Functions/CAPLfunctionAfdxSetTokenInt.htm#aanchor7567||AfdxSetTokenInt64|../Functions/CAPLfunctionAfdxSetTokenInt64.htm#aanchor5078||AfdxSetTokenReal|../Functions/CAPLfunctionAfdxSetTokenReal.htm#aanchor7591||AfdxSetTokenString|../Functions/CAPLfunctionAfdxSetTokenString.htm#aanchor5790||AfdxSetVerbosity|../Functions/CAPLfunctionAfdxSetVerbosity.htm#aanchor535||Declaration of AFDX Frames|../../../CANoeCANalyzer/AFDX/capl/afdxDefineAFDXframe.htm#aanchor2835||Declaration of AFDX Messages|../../../CANoeCANalyzer/AFDX/capl/afdxDefineAFDXmessage.htm#aanchor9408||on a664Frame|CAPLfunctionAFDXOnA664Frame.htm#aanchor10965||on a664Message|#aanchor12537||output (AFDX)|../Functions/CAPLfunctionAfdxOutput.htm#aanchor1738||Use The Right Operating Mode (AFDX)|../../../CANoeCANalyzer/AFDX/procedures/afdxUseOperatingModes.htm#aanchor7054"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Concept Link Icon" />See Also</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col data-mc-conditions="" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo">•&#160;&#160;Technical&#160;References are only&#160;available&#160;in&#160;English</p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

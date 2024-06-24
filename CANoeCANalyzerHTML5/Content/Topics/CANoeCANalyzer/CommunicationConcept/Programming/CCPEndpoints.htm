@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../../" data-mc-conditions="vConditions.CANoe4SWExcluded" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" /><title>Endpoint Selection in Communication Concept</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../../Resources/Stylesheets/vTableSymbol.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTableMiniTOC.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../../CANoeCANalyzer.htm#Topics/CANoeCANalyzer/CommunicationConcept/Programming/CCPEndpoints.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <div>
+                    <p class="StructurePath"><a href="../../CANoeCANalyzer.htm" class="StructurePath" data-mc-conditions="vConditions.CANalyzerExclude,vConditions.CANoe4ServerExcluded,vConditions.CANoe4SWExcluded,vConditions.TestDataEditorExcluded,vConditions.vTESTstudioExcluded,vConditions.TestUnitRunnerExcluded,vConditions.CANoeNMExcluded"><img src="../../../../Resources/vImages/vToolIcons/CANoe_Icon16.png" alt="" />&#160;CANoe</a> » <a href="../CC.htm" class="StructurePath MCXref xref xrefStructurePath">Communication Concept</a> » <a href="CCP.htm" class="StructurePath">Programming</a> » <span class="mc-variable System.Title variable">Endpoint Selection in Communication Concept</span></p>
+                    <h1><span class="mc-variable System.Title variable">Endpoint Selection in Communication Concept</span>
+                    </h1>
+                    <p class="MenuPath">&#160;</p>
+                    <p class="AutoSearchFilterConcepts"><a name="aanchor1339"></a>
+                        <MadCap:concept term="SFCore" />
+                    </p>
+                    <p class="IndexConcept"><a name="kanchor1061"></a>
+                    </p>
+                </div>
+                <div>
+                    <p><a name="Shortcuts" id="Shortcuts"></a><a targets="TOGContents" href="javascript:void(0)" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="TOGContents"><img class="MCToggler_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Table of Contents</a>
+                    </p>
+                    <div style="display: none;" data-mc-target-name="TOGContents">
+                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableMiniTOC.css');" class="TableStyle-vTableMiniTOC" cellspacing="2">
+                            <col class="TableStyle-vTableMiniTOC-Column-Column1" />
+                            <tbody>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#ExecutionUnit" class="Tab">Selection in Execution Units</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#DefaultSelection" class="Tab">Default Selection (C# only)</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#APISelection" class="Tab">API for Selection (C# only)</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#DirectSelection" class="Tab">Direct Specification of Endpoints</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyA-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#CollectionEndpoint" class="Tab">Collective Endpoints</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h2 class="SectionMain"><a name="ExecutionUnit" id="ExecutionUnit"></a>Selection in Execution Units <a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>In C#, you often do not need to explicitly select the endpoints of a <a href="../CCObjects.htm">communication object</a>, for example, because there is only one sender and one receiver. In the general case, a communication object can, however, have several endpoints on each side. In CAPL, you must always specify endpoints even if they are unambiguous.</p>
+                <p>
+                    <img src="../../../../Resources/Images/CANoeCANalyzer/ComSetup/CCPEndPoints_641x449.png" style="width: 641;height: 449;" />
+                </p>
+                <p>With point-to-point communication, you must specify in the API from which endpoint to which endpoint communication takes place.</p>
+                <p>With broadcast communication, you must only specify the endpoint used by the code. For some values, however, you must additionally specify on which side the value should be read. For example, in case of an event, for each pair, consisting of a consumer and provider there is a value both on the consumer side (the last received value) and on the provider side (the value last sent to the consumer or the value to be sent next to the consumer). If you only want to measure transferred values between the endpoints, in particular if both endpoints are not simulated, there is also a measured value in the center.</p>
+                <p>In C#, selection per communication object and per execution unit is saved, thus avoiding the need to select endpoints every time values are accessed or functions are called. An execution unit is a group, consisting of one or several programs. This group is configured together and created for a particular purpose, for example an application model or a test unit. If an endpoint is selected for an execution unit, this has no effect on other execution units. The selection of the endpoints is reset when the measurement is started.</p>
+                <div>
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vInfo.png" style="width: 48px;height: 45px;" title="Note" alt="Note" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Note</p>
+                                    <p class="Table">You can assign the mentioned endpoints only if they have been configured in <span class="Product">CANoe</span> and switched to simulated or measurement. This is not necessary for the opposite side of the communication.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionMain"><a name="DefaultSelection" id="DefaultSelection"></a>Default Selection (C# only)<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>Participants can be assigned to each execution unit during its configuration. By default (when starting the measurement), the following endpoint is selected for a communication object:</p>
+                <ul>
+                    <li>If at least one of the assigned participants has an endpoint on the object, this object is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">The <span class="bold">MirrorProvider</span> service has the provider endpoints <span class="bold">LeftMirror</span> and <span class="bold">RightMirror</span>. <span class="bold">RightMirror</span> belongs to the <span class="bold">RightMirror</span> participant which can be assigned by means of configuration to a C# model in the Communication Setup (<a href="../../Windows/CommunicationSetup/ComSetupApplicationModels.htm">Application Models</a>). The <span class="bold">RightMirror</span> endpoint is now preselected for this C# model.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>If several participants have endpoints on the object, the first endpoint is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">If the <span class="bold">LeftMirror</span> participant has been additionally assigned to the C# model as the first participant in the list, then the <span class="bold">LeftMirror</span> endpoint is selected.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>Otherwise, the first simulated endpoint is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">If no participant at all has been assigned, but <span class="bold">LeftMirror</span> is set to real and <span class="bold">RightMirror</span> to simulated, the <span class="bold">RightMirror</span> endpoint is selected.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>If there is no simulated endpoint (on the side), the first endpoint is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">However, if <span class="bold">RightMirror</span> is also set to real, then <span class="bold">LeftMirror</span> is selected again, since this is the first endpoint.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>If an endpoint has been selected via an assigned participant, then its side is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">If the <span class="bold">RightMirror</span> participant has been assigned to the model and its endpoint has been selected because of this, then the provider side is selected, since this endpoint is a provider endpoint.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>Alternatively, the side with a simulated endpoint is selected if only one side has a simulated endpoint.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">If no participant has been assigned, all consumers are set to real and the <span class="bold">RightMirror</span> provider is simulated, then the provider side is selected.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul>
+                    <li>Alternatively, <span class="bold">Measure</span> is selected if measured values between endpoints are available.</li>
+                    <li>Otherwise, the consumer side or the sender side is selected.</li>
+                </ul>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="Table">However, if a consumer (<span class="bold">Control</span>) is also simulated, then its side is selected as long as no participant has been assigned to the model.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionMain"><a name="APISelection" id="APISelection"></a>API for Selection (C# only)<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>The endpoints are selected by calling methods which with <span class="blue">service-oriented communication</span> are called <span class="SourceCode">SelectProvider</span> and <span class="SourceCode">SelectConsumer</span>, and with <span class="Highlight">signal based communication</span> are called <span class="SourceCode">SelectSender</span> and <span class="SourceCode">SelectReceiver</span>. You can pass the following as a parameter:</p>
+                <ul>
+                    <li>a participant</li>
+                    <li>an endpoint directly</li>
+                    <li>the complete path to an endpoint (as a string, as in CAPL, e.g. <span class="SourceCode">Cameras::Camera[Control]</span>)</li>
+                    <li>the index of an endpoint</li>
+                </ul>
+                <p>To select the side, use <span class="SourceCode">SelectSide</span>; you can pass <span class="SourceCode">ProviderSide</span>, <span class="SourceCode">ConsumerSide</span>, <span class="SourceCode">SenderSide</span>, <span class="SourceCode">ReceiverSide</span> or <span class="SourceCode">Measure</span> as a side (depending on the communication type of the object). You can query each communication object to find out whether currently valid endpoints are selected (IsConsistent) and, if so, whether the currently selected endpoint is accessible for the currently selected side (IsValid).</p>
+                <p>You can use the properties <span class="bold">SelectedConsumer</span> / <span class="bold">SelectedProvider</span> / <span class="bold">SelectedSender</span> / <span class="bold">SelectedReceiver</span> to query the participant which belongs to the currently selected endpoint (if there is one). You can use <span class="bold">Selected…Index</span> to also query the index of the selected endpoint.</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">C#</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode"><span class="CodeComment">// Call "SetActive" method on all camera providers</span>
+                                        <br />Camera.SelectConsumer(Camera.Control.Instance);<br />for (uint i = 0; i &lt; Camera.ProviderCount; ++i)<br />{<br />&#160;&#160;Camera.SelectProvider(i);<br />&#160;&#160;var cco = Camera.SetActive.CallAsync(true);<br />&#160;&#160;<span class="CodeComment">// ...</span><br />}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Note that the index of an endpoint can change if endpoints are added or removed (see <a href="CCPServiceDiscovery.htm">Service Discovery</a>).</p>
+                <h2 class="SectionMain"><a name="DirectSelection" id="DirectSelection"></a>Direct Specification of Endpoints<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <h2 class="SectionSub">C#</h2>
+                <p>Instead of using selected endpoints, you can also specifically define endpoints every time values are accessed or functions are called. This is particularly necessary for handlers, since they are linked to a value even before the measurement starts. In C#, you can also specify the endpoints directly to ignore the current selection.</p>
+                <p>In C#, you specify the endpoints in the order <span class="bold">Side</span>, <span class="bold">Consumer</span>, <span class="bold">Provider</span> or <span class="bold">Side</span>, <span class="bold">Sender</span>, <span class="bold">Receiver</span>. With broadcast communication, you only need to specify one of the two endpoints; this endpoint then will be used to determine the side. The individual parts are separated by points.</p>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="TableSourceCode">MirrorAdjustment.consumerSide.Control.LeftMirror; StatusPdu.RightMirror</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionSub">CAPL</h2>
+                <p>In CAPL, you specify the endpoints with point-to-point communication using <span class="bold">Side[Consumer,Provider]</span> or <span class="bold">Side[Sender,Receiver]</span>. If the side is already clearly identified by the type of use, for example with <a href="../../../CAPLFunctions/CommunicationObjects/EventProcedures/CAPLfunctionOnfctCalled.htm">on fct_Called</a> handlers or with <span class="SourceCode">CallAsync</span> call, then you can omit it. With broadcast communication, specify the endpoint using <span class="bold">[Endpoint]</span>.</p>
+                <div class="Indent">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Example</p>
+                                    <p class="TableSourceCode">MirrorAdjustment.consumerSide[Control,LeftMirror]; StatusPdu[RightMirror]</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>You can specify the endpoints using their name or an index; the index can also be determined via a variable or more generally via an expression.</p>
+                <p>With service-oriented communication, you may use <span class="bold">consumerSide</span>, <span class="bold">providerSide</span> and <span class="bold">measure</span> for the side, otherwise use <span class="bold">senderSide</span>, <span class="bold">receiverSide</span> and <span class="bold">measure</span>.</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">CAPL</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode"><span class="CodeComment">// Call "SetActive" method on all camera providers</span>
+                                        <br />callContext Camera.SetActive cco;<br />dword index;<br />for (index = 0; index &lt; getNrOfCOProviders(Camera); ++index)<br />{<br />&#160;&#160;cco = Camera[Control,index].SetActive.CallAsync(1);<br />&#160;&#160;<span class="CodeComment">// ...</span><br />}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionMain"><a name="CollectionEndpoint" id="CollectionEndpoint"></a>Collective Endpoints <a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>Collective endpoints are virtual endpoints which are used to collect incoming data for a whole group of endpoints or to distribute data to be sent to a whole group of endpoints.</p>
+                <p>There are collective endpoints for methods on provider side. You can use them to program the simulation or implementation of the method independently of the consumer. Use <span class="bold">all</span> instead of a concrete consumer to specify the collective endpoint.</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">C#</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">[OnCall(typeof(Camera.providerSide.all.Camera1.SetActive))]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">CAPL</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">on fct_Called Camera[all,Camera1].SetActive</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="LinkList">&#160;</p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Customize Ribbon</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/Stylesheets/vTableSymbol.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../CANoeCANalyzer.htm#Topics/CANoeCANalyzer/Ribbon/RibbonCustomization.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <div>
+                    <p class="StructurePath"><![CDATA[  ]]><a href="Ribbon.htm" class="StructurePath">Ribbon</a> » Customize</p>
+                    <h1><span class="mc-variable System.Title variable">Customize Ribbon</span>
+                    </h1>
+                    <p class="MenuPath"><a href="Ribbon.htm" class="MenuPath">Ribbon</a>: Context Menu</p>
+                    <p class="AutoSearchFilterConcepts"><a name="aanchor4794"></a>
+                        <MadCap:concept term="SFCore" />
+                    </p>
+                    <p class="IndexConcept"><a name="kanchor3620"></a><a name="aanchor4795"></a>
+                        <MadCap:concept term="Toolbar" />
+                    </p>
+                </div>
+                <p>In the <span class="GUI">Ribbon Customization</span> dialog you can adapt the ribbon.</p>
+                <p>You can create new user-defined tabs or groups and add commands for the groups. Thus you can configure the commands that are most important to you on a separate tab or expand an existing tab to include new groups and commands.</p>
+                <div>
+                    <h2 class="GroupBox">Choose Commands</h2>
+                    <p>In this area you can choose individual commands that you want to display on a ribbon tab.</p>
+                    <p>You can have the commands displayed sorted by commands (<span class="GUI">All Commands</span>) or by tabs (<span class="GUI">All Tabs</span>).</p>
+                </div>
+                <div>
+                    <h2 class="GroupBox">Customize Ribbon</h2>
+                    <p>In this area, all configured tabs are displayed.</p>
+                    <p>
+                        <img src="../../../Resources/Images/CANoeCANalyzer/Ribbon/CustomizeRibbonGraphicalOverview.png" alt="" />
+                    </p>
+                    <p>Here you can:</p>
+                    <ul>
+                        <li>Activate/deactivate Ribbons and tabs via the selection field</li>
+                        <li>Add or remove new tabs</li>
+                        <li>Add or remove new groups</li>
+                        <li>Add and remove commands for user-defined groups</li>
+                        <li>Rename user-defined categories, tabs, or groups</li>
+                        <li>Import/export file with customizations</li>
+                    </ul>
+                    <div>
+                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                            <col class="TableStyle-vTableSymbol-Column-Column1" />
+                            <col class="TableStyle-vTableSymbol-Column-Column2" />
+                            <tbody>
+                                <tr>
+                                    <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                        <p class="Table">
+                                            <img src="../../../Resources/vImages/vInfo.png" style="width: 48px;height: 45px;" title="Note" alt="Note" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                        <p class="TableSymbolHead">Notes</p>
+                                        <p class="Table">To make the ribbon easier to read, commands that are not available in the current configuration are hidden. An example would be commands for a bus system that is not being used in the configuration. If, as a result of this, a group or tab does not contain any commands, this element is also hidden. All elements that are hidden in the current configuration are marked with (*).</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>Please note the following restrictions:</p>
+                        <ul>
+                            <li>Commands cannot be renamed.</li>
+                            <li>Predefined standard tabs and groups cannot be renamed.</li>
+                            <li>Predefined standard tabs and groups cannot be removed. However, it is possible to hide them.</li>
+                            <li>No commands can be removed from standard groups.</li>
+                            <li>No commands can be added to standard groups.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="SectionSub">Buttons</h2>
+                    <p><span class="GUI">[New]</span>
+                    </p>
+                    <ul>
+                        <li>New Category<br />Creates a new category that can be displayed either stand-alone or with multiple categories.<br />The order of the categories cannot be changed.</li>
+                        <li>New Tab<br />Creates a new tab in which groups can be inserted.</li>
+                        <li>New Group<br />Creates a new group in which commands can be inserted.</li>
+                    </ul>
+                    <p><span class="GUI">[Rename]</span>
+                    </p>
+                    <ul>
+                        <li>Here, depending on selection, you can change the name of a user-created category, tab or group. You cannot rename commands.</li>
+                    </ul>
+                    <p><a name="ImportExport" id="ImportExport"></a><span class="GUI">[Import/Export]</span>
+                    </p>
+                    <ul>
+                        <li>Here you can export or import your settings as an XML file.<br />After installation of a service pack, you can apply the settings of the previous program version.<br />To do so, import the automatically generated ToolBarLayout <span class="Product">CANoe</span>_backup.xml file. You can find the file in the directory of your <a href="File/Options/General/GeneralFileLocations.htm">application data</a> (<a href="File/Options.htm" class="GUI">Options</a> dialog).</li>
+                    </ul>
+                    <p><span class="GUI">[Reset]</span>
+                    </p>
+                    <ul>
+                        <li>Resetting the selected ribbon tab</li>
+                        <li>Reset all customizations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="SectionSub">Context Menu</h2>
+                    <div class="Indent">
+                        <p><span class="GUI">New Category</span>
+                            <br /><span class="small">Creates a new category that can be displayed either stand-alone or with multiple categories.<br />The order of the categories cannot be changed.</span>
+                        </p>
+                        <p><span class="GUI">New Tab</span>
+                            <br /><span class="small">Creates a new tab in which groups can be inserted.</span>
+                        </p>
+                        <p><span class="GUI">New Group</span>
+                            <br /><span class="small">Creates a new group in which commands can be inserted.</span>
+                        </p>
+                        <p><span class="GUI">Rename</span>
+                            <br /><span class="small">Opens a dialog for renaming a selected category, tab or group. Only user-defined categories, tabs or groups can be renamed.</span>
+                        </p>
+                        <p><span class="GUI">Remove</span>
+                            <br /><span class="small">Deletes the selected user-defined category, tab or group.</span>
+                        </p>
+                        <p><span class="GUI">Add</span>
+                            <br /><span class="small">Copies a complete tab from the command selection on the left to the selected category on the right.<br />Copies a complete group from the command selection on the left to the selected tab on the right.<br />Copies an individually selected command on the left to the selected group on the right.</span>
+                        </p>
+                        <p><span class="GUI">Move Down</span>
+                            <br /><span class="small">Moves a selection down.</span>
+                        </p>
+                        <p><span class="GUI">Move Down</span>
+                            <br /><span class="small">Moves a selection up.</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="SectionSub">Add/Remove Commands</h2>
+                    <p>You can add or remove commands</p>
+                    <ul>
+                        <li>with the arrow buttons for a group</li>
+                        <li>add or delete commands via the context menu</li>
+                    </ul>
+                    <div>
+                        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                            <col class="TableStyle-vTableSymbol-Column-Column1" />
+                            <col class="TableStyle-vTableSymbol-Column-Column2" />
+                            <tbody>
+                                <tr>
+                                    <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                        <p class="Table">
+                                            <img src="../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                        </p>
+                                    </td>
+                                    <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                        <p class="TableSymbolHead">Example</p>
+                                        <p class="TableSymbolHead"> Creating a category with tab, group and command</p>
+                                        <ol>
+                                            <li value="1">Use the <span class="GUI">[New]</span> button to create a new category.<br />In the overview the new category is automatically created with a tab and a group.</li>
+                                            <li value="2">Select the newly inserted group.</li>
+                                            <li value="3">In the command view on the left, select the display <span class="GUI">All Commands</span>.</li>
+                                            <li value="4">Select a command and add it with the context menu command <span class="GUI">Add</span> for the selected group.</li>
+                                        </ol>
+                                        <p>
+                                            <img src="../../../Resources/Images/CANoeCANalyzer/Ribbon/CustomizeRibbonAllTabs.png" alt="" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="LinkList"><a href="Ribbon.htm" class="MenuPath">Ribbon</a>
+                </p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../../" data-mc-conditions="vConditions.CANoe4SWExcluded" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" /><title>Reuse of Code with Variables and Parameters</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../../Resources/Stylesheets/vTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTableMiniTOC.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../../CANoeCANalyzer.htm#Topics/CANoeCANalyzer/CommunicationConcept/Programming/CCPVariables.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <div>
+                    <p class="StructurePath"><a href="../../CANoeCANalyzer.htm" class="StructurePath" data-mc-conditions="vConditions.CANalyzerExclude,vConditions.CANoe4ServerExcluded,vConditions.CANoe4SWExcluded,vConditions.TestDataEditorExcluded,vConditions.vTESTstudioExcluded,vConditions.TestUnitRunnerExcluded,vConditions.CANoeNMExcluded"><img src="../../../../Resources/vImages/vToolIcons/CANoe_Icon16.png" alt="" />&#160;CANoe</a> » <a href="../CC.htm" class="StructurePath MCXref xref xrefStructurePath">Communication Concept</a> » <a href="CCP.htm" class="StructurePath">Programming</a> » <span class="mc-variable System.Title variable">Reuse of Code with Variables and Parameters</span></p>
+                    <h1><span class="mc-variable System.Title variable">Reuse of Code with Variables and Parameters</span>
+                    </h1>
+                    <p class="MenuPath">&#160;</p>
+                    <p class="AutoSearchFilterConcepts"><a name="aanchor2878"></a>
+                        <MadCap:concept term="SFCore" />
+                    </p>
+                    <p class="IndexConcept"><a name="kanchor2207"></a>
+                    </p>
+                </div>
+                <div>
+                    <p><a name="Shortcuts" id="Shortcuts"></a><a targets="TOGContents" href="javascript:void(0)" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="TOGContents"><img class="MCToggler_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Table of Contents</a>
+                    </p>
+                    <div style="display: none;" data-mc-target-name="TOGContents">
+                        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableMiniTOC.css');" class="TableStyle-vTableMiniTOC" cellspacing="2">
+                            <col class="TableStyle-vTableMiniTOC-Column-Column1" />
+                            <tbody>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#DataTypes" class="Tab">Data Types for Endpoints</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#Initialization" class="Tab">Initialization</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyD-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#DeReference" class="Tab">Dereferencing</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-vTableMiniTOC-Body-Body1">
+                                    <td style="background-color: #f0f5f5;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;" class="TableStyle-vTableMiniTOC-BodyA-Column1-Body1">
+                                        <p class="TableTextSmall"><a href="#ChangeRefEndpoints" class="Tab">Changing the Referenced Endpoints</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h2 class="SectionMain"><a name="DataTypes" id="DataTypes"></a>Data Types for Endpoints<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>You can save references to endpoints of communication objects in variables or parameters and transfer them to functions. The APIs provide data types for it. This allows you to program functions such that they can be used again and independently of the endpoints actually used.</p>
+                <p>The name of these data types consist of several components:</p>
+                <ul>
+                    <li>Type of the communication object: service, method, event, field, PDU, signal.</li>
+                    <li>Type of the referenced endpoints, depending on the communication pattern and type. With point-to-point communication, both endpoints must often be referenced to address communication between the two endpoints. For other functionality (e.g. the state of a provider) and for broadcast communication, it is sufficient to reference only one endpoint.</li>
+                    <li>A <span class="bold">Ref</span> suffix to indicate that it is a reference</li>
+                </ul>
+                <h2 class="SectionSub">Service Oriented Communication</h2>
+                <div>
+                    <table style="width: 100%;mc-table-style: url('../../../../Resources/Stylesheets/vTable.css');margin-left: 0;margin-right: auto;" class="TableStyle_vTable" cellspacing="0">
+                        <col style="width: 50%;" />
+                        <col style="width: 50%;" />
+                        <col style="width: 50%;" />
+                        <thead>
+                            <tr>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColSep">
+                                    <p class="TableHead">Referenced endpoints</p>
+                                </th>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColSep">
+                                    <p class="TableHead">Point-to-point</p>
+                                </th>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColEnd">
+                                    <p class="TableHead">Broadcast</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Consumer and provider where the consumer side is referenced</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">consumed&lt;Object type&gt;Ref, e.g. consumedMethodRef, consumedServiceRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Consumer and provider where the provider side is referenced</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">provided&lt;Object type&gt;Ref, e.g. providedEventRef, providedServiceRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Consumer and provider where the transmission between them is observed (measured)</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">measured&lt;Object type&gt;Ref, e.g. measuredFieldRef, measuredServiceRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Consumer</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">&lt;Object type&gt;ConsumerRef, e.g. serviceConsumerRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table">consumed&lt;Object type&gt;Ref, e.g. consumedSignalRef</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColSep">
+                                    <p class="Table">Provider</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColSep">
+                                    <p class="Table">&lt;Object type&gt;ProviderRef, e.g. fieldProviderRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColEnd">
+                                    <p class="Table">provided&lt;Object type&gt;Ref, e.g. providedSignalRef</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Service-oriented broadcast communication is only available with <span class="bold">semantic</span> signals.</p>
+                <h2 class="SectionSub">Signal Based Communication</h2>
+                <div>
+                    <table style="width: 100%;mc-table-style: url('../../../../Resources/Stylesheets/vTable.css');margin-left: 0;margin-right: auto;" class="TableStyle_vTable" cellspacing="0">
+                        <col style="width: 50%;" />
+                        <col style="width: 50%;" />
+                        <col style="width: 50%;" />
+                        <thead>
+                            <tr>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColSep">
+                                    <p class="TableHead">Referenced endpoints</p>
+                                </th>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColSep">
+                                    <p class="TableHead">Point-to-point</p>
+                                </th>
+                                <th class="TableStyle_vTable_Head_0_0_RowSep_ColEnd">
+                                    <p class="TableHead">Broadcast</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Sender and receiver where the sender side is referenced</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">tx&lt;Object type&gt;Ref, e.g. txSignalRef, txPDURef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Sender and receiver where the receiver side is referenced</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">	rx&lt;Object type&gt;Ref, e.g. rxSignalRef, rxPDURef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Sender and receiver where the transmission between them is observed (measured)</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Measured&lt;Object type&gt;Ref, e.g. measuredSignalRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table"><![CDATA[	]]>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">Sender</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColSep">
+                                    <p class="Table">&lt;Object type&gt;SenderRef, e.g. signalSenderRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowSep_ColEnd">
+                                    <p class="Table">tx&lt;Object type&gt;Ref, e.g. txSignalRef, txPDURef</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColSep">
+                                    <p class="Table">Receiver</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColSep">
+                                    <p class="Table">&lt;Object type&gt;ReceiverRef, e.g. signalReceiverRef</p>
+                                </td>
+                                <td class="TableStyle_vTable_Body_0_0_RowEnd_ColEnd">
+                                    <p class="Table">rx&lt;Object type&gt;Ref, e.g. rxSignalRef, rxPDURef</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionSub">Specifying the CO Data Type</h2>
+                <p>The above types are always available both unspecialized and specialized for a certain data type of the referenced communication object. This specialization is necessary when you want to access values or call a method, since the data type of the value or the signature of the function must be known for it.</p>
+                <p>In C#, the unspecialized types of interfaces have a <span class="bold">I</span> before the type name, for example <span class="SourceCode">IConsumedServiceRef</span> or <span class="SourceCode">ITxSignalRef</span>. In specialized types with primitive data types, the data type is attached to the type name, for example <span class="SourceCode">TxSignalRefDouble</span> or <span class="SourceCode">FieldProviderRefInt32</span>. Specialized types with complex data types (especially service interface types or method types) are available below the data type, for example<span class="SourceCode">IMirrorAdjustment.ProvidedServiceRef</span>.</p>
+                <p>In CAPL, the unspecialized types are specified with <span class="bold">*</span> behind the type name, for example <span class="SourceCode">consumedServiceRef *</span> or <span class="SourceCode">txSignalRef *</span>. Specialized types, instead of <span class="bold">*</span> have the name of the data type (possibly a name of a primitive CAPL data type, such as double or int64) or of a CO, for example<span class="SourceCode">providedServiceRef IMirrorAdjustment</span>, <span class="SourceCode">consumedMethodRef Camera.GetStatus</span> or <span class="SourceCode">txPDURef MirrorState</span>.</p>
+                <p>It is always possible to assign a variable of a specialized type to a similar unspecialized type. The reverse assignment of an unspecialized to a specialized type requires a cast.</p>
+                <h2 class="SectionMain"><a name="Initialization" id="Initialization"></a>Initialization<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>Variables or parameters which reference endpoints can be initialized by means of suitable communication objects or other variables or parameters. "Suitable" means that the type and data type must be compatible. To come from the communication object to the endpoint in C#, you can use the <span class="bold">Selected&lt;Type&gt;</span> property on the communication object; the type corresponds in this case to the desired variable or parameter type.</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">C#</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">IMirrorAdjustment.ConsumedServiceRef mirror1 = MirrorAdjustment.SelectedConsumedService;<br />Position.FieldProviderRef field1 = MirrorAdjustment.CurrentPosition.SelectedFieldProvider;<br />TxSignalRefInt32 signal1 = MirrorState.SelectedTxSignal;</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>In CAPL, you can search for an endpoint during runtime using the lookup function. In doing so, you must transfer the fully qualified path (see second last line of the example).</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">CAPL</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">consumedServiceRef MirrorAdjustment mirror1;<br />consumedFieldRef MirrorAdjustment.CurrentPosition field1;<br />txSignalRef long signal1;<br /><br />mirror1 = MirrorAdjustment.consumerSide[CANoe,LeftMirror];<br />field1 = MirrorAdjustment.consumerSide[0,0].CurrentPosition;<br />mirror1 = (consumedServiceRef IMirrorAdjustment)<br />&#160;&#160;&#160;&#160;lookupConsumedService(<br />&#160;&#160;&#160;&#160;"Mirrors::MirrorAdjustment.consumerSide[CANoe,RightMirror]");<br />signal1 = MirrorState.senderSide[LeftMirror,CANoe];</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>The variables can remain uninitialized or be created in C# by means of a default constructor. In this case, they are initially non-dereferenceable until they form a valid reference.</p>
+                <p>In C#, you should call <span class="bold">Dispose</span> on the variables if they are no longer needed.</p>
+                <h2 class="SectionMain"><a name="DeReference" id="DeReference"></a>Dereferencing<a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>Variables or parameters are dereferenced implicitly when you use them to access values or call methods. If there is no valid reference at that time, an error message is output. The callable API depends on the type and data type of the variables or parameters. The properties <span class="bold">Name</span> and <span class="bold">Path</span>, however, are always available. They identify the referenced endpoint or the referenced endpoints and the side.</p>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">C#</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">mirror1.Adjust.CallAsync(-50, 0);<br />int x = field1.x;<br />Output.WriteLine("Referenced endpoints: " + mirror1.Name);</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">CAPL</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">adjustMethod.CallAsync(-50, 0);<br />x = $field1.x;<br />write("Referenced endpoints: %s", mirror1.Name);</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="SectionMain"><a name="ChangeRefEndpoints" id="ChangeRefEndpoints"></a>Changing the Referenced Endpoints <a href="#Shortcuts" class="TopOfPageWhite">[▲ back]</a></h2>
+                <p>Endpoints referenced by a variable or parameter can be changed without the need to be re-initialized:</p>
+                <ul>
+                    <li>To change an endpoint, but to maintain the referenced communication object, you can call <span class="SourceCode">SetProvider</span>, <span class="SourceCode">SetConsumer</span> or <span class="SourceCode">SetSender</span>, <span class="SourceCode">SetReceiver</span>. As with <span class="SourceCode">Select…</span> on the communication object itself, you can transfer a participant, directly an endpoint or the path to an endpoint or an index.<br />If you transfer an endpoint of a different (suitable) communication object, the referenced communication object is also changed.</li>
+                    <li>You can change the referenced communication object by calling <span class="SourceCode">SetService</span>/<span class="SourceCode">SetMethod</span>, etc. In doing so, new suitable endpoints - if possible - will be selected according to the previously selected endpoints: if the old endpoint belongs to a participant which contains an endpoint in the new communication object on the suitable side, then this endpoint will be selected.</li>
+                    <li>You can de-initialize the reference by calling <span class="SourceCode">Clear()</span> as if it was newly created.</li>
+                    <li>You can use <span class="SourceCode">IsConsistent</span> to query whether a valid CO and valid endpoints are referenced and also whether the endpoints belong to the CO.</li>
+                    <li>You can use <span class="SourceCode">IsValid</span> to query whether the referenced endpoint used is accessible (in the simulated or measurement state). Dereferencing is only possible if these requirements are met.</li>
+                    <li>You can query the set endpoints similar to CO by means of <span class="SourceCode">GetSelected…()</span> (provides a participant, if possible) and <span class="SourceCode">GetSelected…Index()</span>.</li>
+                    <li>To create a copy of the reference in C#, call <span class="SourceCode">Clone()</span>.</li>
+                </ul>
+                <div>
+                    <table style="margin-left: 0;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">C#</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">var mirror1 = new IMirrorAdjustment.ServiceProviderRef();<br />Output.WriteLine("mirror1: " + mirror1.IsValid);<br />mirror1.SetProvider(MirrorAdjustment.LeftMirror.Instance);<br />Output.WriteLine("mirror1: " + mirror1.IsValid);<br />var mirror2 = mirror1.Clone();<br />mirror2.SetProvider(RearCamera.Instance); <span class="CodeComment">// participant doesn’t fit</span><br />Output.WriteLine("mirror1: " + mirror1.IsValid + " mirror2: " + mirror2.IsValid);<br /><span class="CodeComment">// output:<br />// mirror1: false<br />// mirror1: true<br />// mirror1: true</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="TableBold">CAPL</p>
+                                </td>
+                                <td>
+                                    <p class="TableSourceCode">serviceProviderRef IMirrorAdjustment mirror1, mirror2;<br />write(“mirror1: %d”, mirror1.IsValid);<br />mirror1 = MirrorAdjustment[LeftMirror];<br />write(“mirror1: %d”, mirror1.IsValid);<br />mirror2 = mirror1;<br />mirror2.SetProvider(RearCamera); <span class="CodeComment">// participant doesn’t fit</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="LinkList">&#160;</p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

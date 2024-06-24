@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../../" data-mc-conditions="vConditions.CANalyzerExclude" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" /><title>AfdxCompletePacket</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../../Resources/Stylesheets/vTableSymbol.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTableLight.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../../CANoeCANalyzer.htm#Topics/CAPLFunctions/ADFX/Functions/CAPLfunctionAfdxCompletePacket.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <div>
+                    <p class="StructurePath"><a href="../../CAPLfunctions.htm" class="StructurePath MCXref xref xrefStructurePath">CAPL Functions</a> » <a href="../CAPLfunctionsAFDXOverview.htm" class="StructurePath">AFDX</a> » <span class="mc-variable System.Title variable">AfdxCompletePacket</span></p>
+                    <h1><a name="aanchor4700"></a>
+                        <MadCap:concept term="CAPLAFDX" /><span class="mc-variable System.Title variable">AfdxCompletePacket</span><a name="kanchor3547"></a>
+                    </h1>
+                    <p class="MenuPath">&#160;</p>
+                    <p class="AutoSearchFilterConcepts"><a name="aanchor4701"></a>
+                        <MadCap:concept term="SFCAPLFunctions" />
+                    </p>
+                </div>
+                <div data-mc-target-name="DIVCAPLFunctionSyntax">
+                    <h2 class="CommandPage">Function Syntax</h2>
+                    <p class="Syntax">long <span class="mc-variable System.Title variable">AfdxCompletePacket</span>( long packet );</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLDescription">
+                    <h2 class="CommandPage">Description</h2>
+                    <p>This function completes a packet before sending it with <a href="CAPLfunctionAfdxOutputPacket.htm">AfdxOutputPacket</a>. It calculates the fields that are marked with <span class="bold">CompleteProtocol</span> in the protocol overview, e.g. checksum, lengths, etc.</p>
+                    <p>A frame needs to be completed prior to transmission. This is the case when one of the header fields is changed in an existing frame or the payload size is changed afterwards. With this function the checksum and length fields in the <a href="../../../CANoeCANalyzer/AFDX/protocols/afdxProtocolUDP.htm">UDP</a> and <a href="../../../CANoeCANalyzer/AFDX/protocols/afdxProtocolIPv4.htm">IPv4</a> header are calculated and filled in.</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLParameters">
+                    <h2 class="CommandPage">Parameters</h2>
+                    <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col style="width: 80px;" class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">packet</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                    <p class="Table">Handle of the message that has been created with <a href="CAPLfunctionAfdxInitPacket.htm">AfdxInitPacket</a>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLReturnValues">
+                    <h2 class="CommandPage">Return&#160;Values</h2>
+                    <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col style="width: 80px;" class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">0</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Frame is successfully completed.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">other value</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                    <p>See <a href="../CAPLfunctionsAFDXErrorCodes.htm">error code</a>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLExample">
+                    <h2 class="CommandPage">Example</h2>
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td id="content" class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="Table">See example of <a href="CAPLfunctionAfdxResizeToken.htm">AfdxResizeToken</a>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLAvailability">
+                    <h2 class="CommandPage">Availability</h2>
+                    <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-vTableLight-Head-Header1">
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">&#160;</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANalyzer</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Windows)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Linux)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadD-Column1-Header1">
+                                    <p class="TableHead">vTESTstudio</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Since&#160;Version</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">8.0</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Restricted&#160;To</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">AFDX</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">CANalyzer Measurement&#160;Setup (Transmit Branch)</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Measurement&#160;Setup / CANalyzer Analysis Branch</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Simulation Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Communication Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Modules</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Units</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">32-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">64-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyA-Column1-Body1" style="background-color: #dadee1;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;border-right-style: none;border-right-width: 1px;border-right-color: #909090;">N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="LinkList"><a class="MCHelpControl MCHelpControl-Concept conceptLink" data-mc-concepts="CAPLAFDX" href="javascript:void(0);" data-mc-topics="&lt;OnAfdxError&gt;|../EventProcedures/CAPLfunctionOnAfdxError.htm#aanchor7528||&lt;OnAfdxPacket&gt;|../EventProcedures/CAPLfunctionOnAfdxPacket.htm#aanchor6224||A664CloseProxyPort|CAPLfunctionA664CloseProxyPort.htm#aanchor1893||A664GetFunctionalStatus|CAPLfunctionA664GetFunctionalStatus.htm#aanchor6516||A664InitICMP|CAPLfunctionA664InitICMP.htm#aanchor10432||A664InitMessage|CAPLfunctionA664InitMessage.htm#aanchor2709||A664InitPayload|CAPLfunctionA664InitPayload.htm#aanchor312||A664InitProxyPort|CAPLfunctionA664InitProxyPort.htm#aanchor12613||A664isICMP|CAPLfunctionA664isICMP.htm#aanchor10353||A664MsgConfig|CAPLfunctionA664MsgConfig.htm#aanchor11528||A664ResizeMessage|CAPLfunctionA664ResizeMessage.htm#aanchor8370||A664SetChecksum|CAPLfunctionA664SetChecksum.htm#aanchor7662||A664SetFunctionalStatus|CAPLfunctionA664SetFunctionalStatus.htm#aanchor10550||A664SetStringSignal|CAPLfunctionA664SetStringSignal.htm#aanchor6088||A664TriggerFrame|CAPLfunctionA664TriggerFrame.htm#aanchor5009||A664VLConfig|CAPLfunctionA664VLConfig.htm#aanchor9092||AFDX CAPL Functions|../CAPLfunctionsAFDXOverview.htm#aanchor9285||AFDX Copy-Operator|CAPLfunctionAfdxCopyOperator.htm#aanchor1985||AFDX Error Codes|../CAPLfunctionsAFDXErrorCodes.htm#aanchor8852||AfdxCompletePacket|#aanchor4700||AfdxDeregisterReceiveCallback|CAPLfunctionAfdxDeregisterReceiveCallback.htm#aanchor9765||AfdxGetDBAttrAsString|CAPLfunctionAfdxGetDBAttrAsString.htm#aanchor6495||AfdxGetDBAttrValue|CAPLfunctionAfdxGetDBAttrValue.htm#aanchor7717||AfdxGetDBMessageName|CAPLfunctionAfdxGetDBMessageName.htm#aanchor703||AfdxGetLastError|CAPLfunctionAfdxGetLastError.htm#aanchor9379||AfdxGetLastErrorText|CAPLfunctionAfdxGetLastErrorText.htm#aanchor1577||AfdxGetMessageId|CAPLfunctionAfdxGetMessageId.htm#aanchor4985||AfdxGetMessageName|CAPLfunctionAfdxGetMessageName.htm#aanchor380||AfdxGetPacketData|CAPLfunctionAfdxGetPacketData.htm#aanchor1111||AfdxGetSignalBool|CAPLfunctionAfdxGetSignalBool.htm#aanchor9522||AfdxGetSignalInt|CAPLfunctionAfdxGetSignalInt.htm#aanchor1736||AfdxGetSignalInt64|CAPLfunctionAfdxGetSignalInt64.htm#aanchor389||AfdxGetSignalOpaque|CAPLfunctionAfdxGetSignalOpaque.htm#aanchor3997||AfdxGetSignalReal|CAPLfunctionAfdxGetSignalReal.htm#aanchor7938||AfdxGetSignalStatus|CAPLfunctionAfdxGetSignalStatus.htm#aanchor2588||AfdxGetSignalString|CAPLfunctionAfdxGetSignalString.htm#aanchor11569||AfdxGetTokenData|CAPLfunctionAfdxGetTokenData.htm#aanchor8125||AfdxGetTokenInt|CAPLfunctionAfdxGetTokenInt.htm#aanchor943||AfdxGetTokenInt64|CAPLfunctionAfdxGetTokenInt64.htm#aanchor11873||AfdxGetTokenLengthBit|CAPLfunctionAfdxGetTokenLengthBit.htm#aanchor1101||AfdxGetTokenReal|CAPLfunctionAfdxGetTokenReal.htm#aanchor5506||AfdxGetTokenString|CAPLfunctionAfdxGetTokenString.htm#aanchor11048||AfdxInitPacket|CAPLfunctionAfdxInitPacket.htm#aanchor7673||AfdxInitProtocol|CAPLfunctionAfdxInitProtocol.htm#aanchor11938||AfdxInitSchedule|CAPLfunctionAfdxInitSchedule.htm#aanchor5950||AfdxIsPacketValid|CAPLfunctionAfdxIsPacketValid.htm#aanchor6262||AfdxIsReceiveCallbackRegistered|CAPLfunctionAfdxIsReceiveCallbackRegistered.htm#aanchor8720||AfdxOutputPacket|CAPLfunctionAfdxOutputPacket.htm#aanchor6760||AfdxOutputPacketRaw|CAPLfunctionAfdxOutputPacketRaw.htm#aanchor8272||AfdxOutputPacketWithSignals|CAPLfunctionAfdxOutputPacketWithSignals.htm#aanchor1942||AfdxRegisterReceiveCallback|CAPLfunctionAfdxRegisterReceiveCallback.htm#aanchor12570||AfdxReleasePacket|CAPLfunctionAfdxReleasePacket.htm#aanchor9385||AfdxRemoveToken|CAPLfunctionAfdxRemoveToken.htm#aanchor4105||AfdxResizeToken|CAPLfunctionAfdxResizeToken.htm#aanchor1922||AfdxSetErrorHandler|CAPLfunctionAfdxSetErrorHandler.htm#aanchor8645||AfdxSetSignalBool|CAPLfunctionAfdxSetSignalBool.htm#aanchor2868||AfdxSetSignalInt|CAPLfunctionAfdxSetSignalInt.htm#aanchor12007||AfdxSetSignalInt64|CAPLfunctionAfdxSetSignalInt64.htm#aanchor10061||AfdxSetSignalOpaque|CAPLfunctionAfdxSetSignalOpaque.htm#aanchor1238||AfdxSetSignalReal|CAPLfunctionAfdxSetSignalReal.htm#aanchor8018||AfdxSetSignalStatus|CAPLfunctionAfdxSetSignalStatus.htm#aanchor6933||AfdxSetSignalString|CAPLfunctionAfdxSetSignalString.htm#aanchor7195||AfdxSetTokenData|CAPLfunctionAfdxSetTokenData.htm#aanchor3908||AfdxSetTokenInt|CAPLfunctionAfdxSetTokenInt.htm#aanchor7567||AfdxSetTokenInt64|CAPLfunctionAfdxSetTokenInt64.htm#aanchor5078||AfdxSetTokenReal|CAPLfunctionAfdxSetTokenReal.htm#aanchor7591||AfdxSetTokenString|CAPLfunctionAfdxSetTokenString.htm#aanchor5790||AfdxSetVerbosity|CAPLfunctionAfdxSetVerbosity.htm#aanchor535||Declaration of AFDX Frames|../../../CANoeCANalyzer/AFDX/capl/afdxDefineAFDXframe.htm#aanchor2835||Declaration of AFDX Messages|../../../CANoeCANalyzer/AFDX/capl/afdxDefineAFDXmessage.htm#aanchor9408||on a664Frame|../EventProcedures/CAPLfunctionAFDXOnA664Frame.htm#aanchor10965||on a664Message|../EventProcedures/CAPLfunctionAFDXOnA664Message.htm#aanchor12537||output (AFDX)|CAPLfunctionAfdxOutput.htm#aanchor1738||Use The Right Operating Mode (AFDX)|../../../CANoeCANalyzer/AFDX/procedures/afdxUseOperatingModes.htm#aanchor7054"><span class="MCHelpControl-ConceptHotSpot_"><img class="MCHelpControl_Image_Icon" src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Concept Link Icon" />See Also</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col data-mc-conditions="" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo">•&#160;&#160;Technical&#160;References are only&#160;available&#160;in&#160;English</p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

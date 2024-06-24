@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="CANoeCANalyzer.xml" data-mc-path-to-help-system="../../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" /><title>frSendFrame</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Resources/Stylesheets/vTableMasterPageHeader.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vStylesheet.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../../Resources/Stylesheets/vTableLight.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../../../Resources/Stylesheets/vTableSymbol.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMessageBus.CrossFrame.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedbackHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapFeedback.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapTriPane.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/SyntaxHighlighting.js">
+        </script>
+        <script type="text/jscript" src="../../../../Resources/vScripts/TabSwitch.js">
+        </script>
+        <script type="text/javascript" src="../../../../Resources/vScripts/Vector.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../../../../CANoeCANalyzer.htm#Topics/CAPLFunctions/FlexRay/Functions/CAPLfunctionFRSendFrame.htm">Open topic with navigation</a>
+        </p>
+        <div class="Body">
+            <div role="main" id="mc-main-content">
+                <p class="StructurePath"><a href="../../CAPLfunctions.htm" class="StructurePath MCXref xref xrefStructurePath">CAPL Functions</a> » <a href="../CAPLfunctionsFlexrayOverview.htm" class="StructurePath">FlexRay</a> » <span class="mc-variable System.Title variable">frSendFrame</span></p>
+                <h1><a name="aanchor316"></a>
+                    <MadCap:concept term="CAPLFlexRay" /><a name="kanchor254"></a><span class="mc-variable System.Title variable">frSendFrame</span>
+                </h1>
+                <p class="MenuPath">&#160;</p>
+                <p class="AutoSearchFilterConcepts"><a name="aanchor317"></a>
+                    <MadCap:concept term="SFCAPLFunctions" />
+                </p>
+                <div data-mc-target-name="DIVCAPLNote">
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vInfo.png" style="width: 48px;height: 45px;" title="Note" alt="Note" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSymbolHead">Note</p>
+                                    <p>This function is deprecated! Use function <a href="CAPLfunctionFRUpdateStatFrame.htm">frUpdateStatFrame</a> or <a href="CAPLfunctionFROutputDynFrame.htm">frOutputDynFrame</a> instead.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLFunctionSyntax">
+                    <h2 class="CommandPage">Function Syntax</h2>
+                    <p class="Syntax">frSendFrame( &lt;frame name&gt;, dword flags, byte dataBytes[] ); // form 1</p>
+                    <p>Uses a symbolic frame name from the database.<br /><span class="Bold">Note:</span> This symbolic function is not available when executing CAPL programs directly on an interface hardware (CAPL-on-Board).</p>
+                    <p class="Syntax">frSendFrame( int slotId, int channelMask, int len, int cycleStart, int cycleRepetition, dword flags, byte dataBytes[], int channel ); // form 2</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLDescription">
+                    <h2 class="CommandPage">Description</h2>
+                    <p>This function generates a FlexRay frame and sends it on the bus. The FlexRay communication controller sends the message at the next possible point in time.</p>
+                    <p>The message must be registered before sending (see <a href="CAPLfunctionFrSetSendFrame.htm">frSetSendFrame</a> function).</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLParameters">
+                    <h2 class="CommandPage">Parameters</h2>
+                    <p>Taken from the corresponding frame definition of the database.</p>
+                    <table style="margin-left: 0;margin-right: auto;width: 100%;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col class="TableStyle-vTableLight-Column-Column1" style="width: 80px;" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">slotId</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Identifier of the time slot in which the message should be sent.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">channelMask</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Channel of the transmission message.<br />Values:</p>
+                                    <table style="width: 100%;caption-side: top;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                                        <col style="width: 79px;" class="TableStyle-vTableLight-Column-Column1" />
+                                        <col class="TableStyle-vTableLight-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                                    <p class="Table">1</p>
+                                                </td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                                    <p class="Table">Channel A</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                                    <p class="Table">2</p>
+                                                </td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                                    <p class="Table">Channel B</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                                    <p class="Table">3</p>
+                                                </td>
+                                                <td class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                                    <p class="Table">Channel A+B (should correspond to the registered value; see <a href="CAPLfunctionFrSetSendFrame.htm">frSetSendFrame</a> function)</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">len</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Number of data bytes (maximum 254 bytes).</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">cycleStart</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">This number designates the base cycle. This value must be smaller than the repetition factor and lies in the range between 0 and 63.<br />This value, together with the repetition factor, determines the "Cycle Multiplexing" of the frame. The slot ID, channel mask, and cycle multiplexing  uniquely identify the message in a FIBEX database.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">cycleRepetition</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">This number designates the cycle repetition factor. The value must be between 1 and 64 and must be a power of 2 (e.g. 1, 2, 4, 8, 16, 32 or 64).<br />This value, together with the base cycle, determines the "Cycle Multiplexing" of the frame. The slot ID and the cycle multiplexing (and the cluster allocation of the FlexRay bus) uniquely identify the message in a FIBEX database.</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">flags</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Corresponding bits in the flags set or activate special states for the frame to be sent:</p>
+                                    <table style="width: 100%;caption-side: top;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                                        <col style="width: 79px;" class="TableStyle-vTableLight-Column-Column1" />
+                                        <col class="TableStyle-vTableLight-Column-Column1" />
+                                        <thead>
+                                            <tr class="TableStyle-vTableLight-Head-Header1">
+                                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                                    <p class="TableHead">Bitmask</p>
+                                                </th>
+                                                <th class="TableStyle-vTableLight-HeadD-Column1-Header1">
+                                                    <p class="TableHead">Meaning</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">0x10</td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">Sets the send mode to event triggered (if bit not set then time-triggered mode).</td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">0x20</td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">Sets the payload preamble bit (with static frames, the initial databytes then contain the local NM vector; with dynamic frames, the first two bytes then designate the expanded message ID).</td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">0x80</td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                                    <p class="Table">Tx OFF</p>
+                                                    <p class="Table">The frame is no longer sent, the corresponding slots remain empty.</p>
+                                                    <p class="Table">The flag can only be used with VN interfaces.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">0x200</td>
+                                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                                    <p class="Table">Disable use of In-Cycle-Repetition</p>
+                                                    <p class="Table">Flag has only effect on In-Cycle-Repetition frames. Is the flag set (1), then the frame can be sent in the slot given by the parameter slotID. Is the flag not set (0 = default), then the frame will be sent in the next slot of any of the slots that are given by the In-Cycle-Repetition definition in the database.</p>
+                                                    <p class="Table"><span class="Product">CANoe</span> Version ≥ 7.1 SP3</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">0x400</td>
+                                                <td class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                                    <p class="Table">Sets the Null Frame indicator in the header.</p>
+                                                    <p class="Table">The flag can only be used with VN interfaces.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">databytes</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">Array of data bytes (payload)</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td id="name" class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">channel</p>
+                                </td>
+                                <td id="descr" class="TableStyle-vTableLight-BodyA-Column1-Body1">
+                                    <p class="Table">Channel number (or cluster number)</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLReturnValues">
+                    <h2 class="CommandPage">Return&#160;Values</h2>
+                    <p>—</p>
+                </div>
+                <div data-mc-target-name="DIVCAPLExample">
+                    <h2 class="CommandPage">Example</h2>
+                    <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableSymbol.css');" class="TableStyle-vTableSymbol" cellspacing="0">
+                        <col class="TableStyle-vTableSymbol-Column-Column1" />
+                        <col class="TableStyle-vTableSymbol-Column-Column2" />
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle-vTableSymbol-BodyB-Column1-">
+                                    <p class="Table">
+                                        <img src="../../../../Resources/vImages/vExample.png" style="width: 48px;height: 45px;" title="Example" alt="Example" />
+                                    </p>
+                                </td>
+                                <td id="content" class="TableStyle-vTableSymbol-BodyA-Column2-">
+                                    <p class="TableSourceCode">variables<br />{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// Bitmask meaning in flags:<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// bit | mask | for<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//----------------------------------------------------------------<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// 0 &#160;&#160;| 1 | sync flag (1 == set)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// 1 &#160;&#160;| 2 | startup flag (1 == set)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;// 4 &#160;&#160;| 16 | TT flag (1 == event-triggered, 0 = time-triggered)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;//<br />&#160;&#160;&#160;BYTE gSta1Id &#160;&#160;&#160;&#160;&#160;= 9; &#160;// slot ID for frame to send<br />&#160;&#160;&#160;BYTE gSta1Flags &#160;&#160;= 16; // event-triggered<br />&#160;&#160;&#160;BYTE gSta1Dlc &#160;&#160;&#160;&#160;= 4; &#160;// bytes<br />&#160;&#160;&#160;BYTE gSta1Chan &#160;&#160;&#160;= 3; &#160;// send on channel A+B<br />&#160;&#160;&#160;BYTE gSta1Base &#160;&#160;&#160;= 0; &#160;// base cycle<br />&#160;&#160;&#160;BYTE gSta1Rep &#160;&#160;&#160;&#160;= 1; &#160;// cycle repetition<br />&#160;&#160;&#160;BYTE gSta1Channel = %CHANNEL%; &#160;// FR interface<br />&#160;&#160;&#160;const long gPeriodSine &#160;&#160;&#160;&#160;= 8000;<br />&#160;&#160;&#160;const long gPeriodRect &#160;&#160;&#160;&#160;= 1000;<br />&#160;&#160;&#160;const long gAmplitudeSine &#160;= 1000;<br />&#160;&#160;&#160;const int cMaxFRBufSize = 254;<br />&#160;&#160;BYTE gSta1Msg[cMaxFRBufSize]; // message buffer<br />}<br />on preStart<br />{<br />&#160;&#160;&#160;int i;<br />&#160;&#160;&#160;// Declare Tx buffer in interface:<br />&#160;&#160;&#160;frSetSendFrame(gSta1Id /*frameId*/, gSta1Chan /*channelMask*/, gSta1Dlc /*len*/, gSta1Base /*cycleStart*/, gSta1Rep /*cycleRepetition*/, gSta1Flags /*flags*/, gSta1Channel /*cluster*/);<br />&#160;&#160;&#160;// Initialize payload:<br />&#160;&#160;&#160;for(i=0; i&lt;gSta1Dlc; ++i)<br />&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;gSta1Msg[i] = i;<br />&#160;&#160;&#160;}<br />}<br />on FRStartCycle *<br />{<br />&#160;&#160;&#160;if (this.FR_Cycle % gSta1Rep == gSta1Base)<br />&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;doCalc();<br />&#160;&#160;&#160;&#160;&#160;&#160;FRSend();<br />&#160;&#160;&#160;}<br />}<br />FRSend ()<br />{<br />&#160;&#160;&#160;frSendFrame(gSta1Id /*frameId*/, gSta1Chan /*channelMask*/, gSta1Dlc /*len*/, gSta1Base /*cycleStart*/, gSta1Rep /*cycleRepetition*/, gSta1Flags /*flags*/, gSta1Msg /*dataBytes*/, gSta1Channel /*cluster*/);<br />}<br />doCalc ()<br />{<br />&#160;&#160;&#160;float sine<br />&#160;&#160;&#160;BYTE &#160;rect;<br />&#160;&#160;&#160;long sinel;<br />&#160;&#160;&#160;// Calculating sine wave and rectangle values:<br />&#160;&#160;&#160;sine = gAmplitudeSine*sin((timeNow()/100)*2*<a href="../../../Shared/CAPL/General/Keywords.htm">PI</a>/gPeriodSine);<br />&#160;&#160;&#160;if (sin((timeNow()/100)*2*<a href="../../../Shared/CAPL/General/Keywords.htm">PI</a>/gPeriodRect)&lt;0)<br />&#160;&#160;&#160;&#160;&#160;&#160;rect = 0;<br />&#160;&#160;&#160;else <br />&#160;&#160;&#160;&#160;&#160;&#160;rect = 1;<br />&#160;&#160;&#160;sinel = sine;<br />&#160;&#160;&#160;// assigning values to message buffer:<br />&#160;&#160;&#160;gSta1Msg[0] = (sinel &amp; 0x000000FF);<br />&#160;&#160;&#160;gSta1Msg[1] = (sinel &amp; 0x0000FF00) &gt;&gt; 8;<br />&#160;&#160;&#160;gSta1Msg[2] = rect;<br />&#160;&#160;&#160;gSta1Msg[3] = 0;<br />}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div data-mc-target-name="DIVCAPLAvailability">
+                    <h2 class="CommandPage">Availability</h2>
+                    <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../Resources/Stylesheets/vTableLight.css');" class="TableStyle-vTableLight" cellspacing="0">
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <col class="TableStyle-vTableLight-Column-Column1" />
+                        <thead>
+                            <tr class="TableStyle-vTableLight-Head-Header1">
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">&#160;</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANalyzer</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Windows)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadE-Column1-Header1">
+                                    <p class="TableHead">CANoe4SW Server Edition (Linux)</p>
+                                </th>
+                                <th class="TableStyle-vTableLight-HeadD-Column1-Header1">
+                                    <p class="TableHead">vTESTstudio</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Since&#160;Version</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">5.2</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">5.2</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">13.0</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">1.0</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">Restricted&#160;To</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">FlexRay</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">FlexRay</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">FlexRay</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1">
+                                    <p class="Table">FlexRay</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">CANalyzer Measurement&#160;Setup (Transmit Branch)</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Measurement&#160;Setup / CANalyzer Analysis Branch</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Simulation Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Communication Setup</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Modules</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold"><span class="Product">CANoe</span> Test Setup for Test Units</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="TableBold">32-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyE-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyD-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-vTableLight-Body-Body1">
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="TableBold">64-Bit</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">✔</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyB-Column1-Body1">
+                                    <p class="Table">—</p>
+                                </td>
+                                <td class="TableStyle-vTableLight-BodyA-Column1-Body1" style="background-color: #dadee1">
+                                    <p class="Table">N/A</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="LinkList">&#160;</p>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="FooterWhite">
+                <table class="FooterWhite" style="border-collapse: collapse;margin-left: auto;margin-right: auto;">
+                    <col style="width: 70px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col style="width: 16px;" data-mc-conditions="vConditions.HTML5Link" />
+                    <col data-mc-conditions="" />
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFooter _Skins_HTML5TopicToolbar mc-component nocontent">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                        <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                            <div>
+                                                <div role="img" class="button-icon-wrapper">
+                                                    <div class="button-icon"> </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo"><a href="../../../Shared/HowToUseOnlineHelp.htm" title="Tips for using the help" alt="Tips for using the help"><img src="../../../../Resources/vImages/vBackstage/vHelpInfo.png" /></a>
+                                </p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo">•&#160;&#160;Technical&#160;References are only&#160;available&#160;in&#160;English</p>
+                            </td>
+                            <td>
+                                <p class="vec_BuildInfo" style="text-align: right;"><span class="mc-variable Vector.BuildTime variable">2023-09-26T19:49:32</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table style="width: 100%;border-collapse: separate;border-spacing: 3px 0px;margin-left: auto;margin-right: auto;caption-side: top;">
+                <col />
+                <col />
+                <col />
+                <col data-mc-conditions="vConditions.HTML5Link" />
+                <tbody>
+                    <tr>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;">
+                            <p class="vec_Footer">©&#160;Vector Informatik GmbH</p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 5pt;text-align: right;">
+                            <p class="vec_FooterBold">
+                                <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded,vConditions.TestDataEditorExcluded">CANoe</MadCap:conditionalText> Version <MadCap:conditionalText data-mc-conditions="vConditions.vTESTstudioExcluded">17 SP3</MadCap:conditionalText></p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="../../../Shared/ContactCopyrightLicense.htm" class="vec_Footer MCXref xref xrefvec_Footer">Contact/Copyright/License</a>
+                            </p>
+                        </td>
+                        <td style="background-color: #b70032;padding-left: 5pt;padding-right: 5pt;padding-top: 5pt;padding-bottom: 0pt;text-align: right;">
+                            <p class="vec_Footer"><a href="https://www.vector.com/int/en/company/get-info/privacy-policy/" target="_blank" class="vec_Footer">Data Privacy Notice</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
