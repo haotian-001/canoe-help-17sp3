@@ -1,1 +1,0 @@
-define({numchunks:1,prefix:'AutosarNMFlexRay320_Chunk',chunkstart:['/Content/Topics/FR320/AutosarNMFR320.htm'],tree:{n:[{i:0,c:0}]}});

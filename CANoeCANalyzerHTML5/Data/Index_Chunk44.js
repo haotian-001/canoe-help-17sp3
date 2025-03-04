@@ -1,1 +1,0 @@
-define({'coThisGetUnsigned (Deprecated)':{l:[{u:'/Content/Topics/CAPLFunctions/Obsolete/CAPLfunctionsObsoleteOverview.htm#kanchor5934',t:'Deprecated and Removed CAPL Functions'}]},'coTriggerTPDO (Deprecated)':{l:[{u:'/Content/Topics/CAPLFunctions/Obsolete/CAPLfunctionsObsoleteOverview.htm#kanchor5935',t:'Deprecated and Removed CAPL Functions'}]}});

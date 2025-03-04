@@ -1,2 +1,0 @@
-var helpSystemName = "CANoeCANalyzer.htm";
-
